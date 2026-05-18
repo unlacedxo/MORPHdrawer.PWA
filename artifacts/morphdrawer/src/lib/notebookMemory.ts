@@ -8,13 +8,16 @@ export type NotebookMemory = {
   forms: CreatureForm[];
   wearLevel: number;
   theme: string;
+  motifCounts: Record<string, number>;
 };
 
 const getInitialMemory = (): NotebookMemory => {
   try {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored) {
-      return JSON.parse(stored);
+      const parsed = JSON.parse(stored);
+      if (!parsed.motifCounts) parsed.motifCounts = {};
+      return parsed;
     }
   } catch (e) {
     console.error("Failed to load notebook memory", e);
@@ -22,7 +25,8 @@ const getInitialMemory = (): NotebookMemory => {
   return {
     forms: [],
     wearLevel: 0,
-    theme: 'moth-dust'
+    theme: 'moth-dust',
+    motifCounts: {}
   };
 };
 
@@ -43,10 +47,16 @@ export const useNotebookMemory = () => {
       const newForms = [form, ...prev.forms];
       const nextWearLevel = Math.min(100, prev.wearLevel + 2); // Increases by 2% per save
       
+      const newMotifCounts = { ...prev.motifCounts };
+      if (form.motifId) {
+        newMotifCounts[form.motifId] = (newMotifCounts[form.motifId] || 0) + 1;
+      }
+      
       const newMemory = {
         ...prev,
         forms: newForms,
-        wearLevel: nextWearLevel
+        wearLevel: nextWearLevel,
+        motifCounts: newMotifCounts
       };
       
       localStorage.setItem(STORAGE_KEY, JSON.stringify(newMemory));
@@ -71,12 +81,24 @@ export const useNotebookMemory = () => {
     });
   }, []);
 
+  const resetNotebook = useCallback(() => {
+    setMemory({
+      forms: [],
+      wearLevel: 0,
+      theme: 'moth-dust',
+      motifCounts: {}
+    });
+    localStorage.removeItem(STORAGE_KEY);
+  }, []);
+
   return {
     forms: memory.forms,
     wearLevel: memory.wearLevel,
     theme: memory.theme,
+    motifCounts: memory.motifCounts,
     saveForm,
     setTheme,
-    deleteForm
+    deleteForm,
+    resetNotebook
   };
 };

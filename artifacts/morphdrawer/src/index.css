@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Nanum+Pen+Script&family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&family=Space+Mono:wght@400&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 @plugin "@tailwindcss/typography";
@@ -79,9 +79,9 @@
   --paper-texture-opacity: 0.3;
   --dust-color: rgba(60, 50, 40, 0.4);
 
-  --app-font-sans: 'Caveat', cursive;
-  --app-font-serif: 'Vollkorn', serif;
-  --app-font-hand: 'Nanum Pen Script', cursive;
+  --app-font-sans: 'Source Serif 4', serif;
+  --app-font-serif: 'Playfair Display', serif;
+  --app-font-hand: 'Space Mono', monospace;
 }
 
 [data-theme="bone-archive"] {
@@ -237,4 +237,34 @@
 }
 .hover-shift:hover {
   transform: rotate(1deg) translateY(-2px);
+}
+
+/* Tape strip visual */
+.tape-strip {
+  position: absolute;
+  background: hsl(var(--primary) / 0.2);
+  border-radius: 2px;
+  mix-blend-mode: multiply;
+}
+
+/* Sticky note feel */
+.sticky-note {
+  position: relative;
+  transform: rotate(-1deg);
+}
+.sticky-note::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 12px 12px;
+  border-color: transparent transparent hsl(var(--background)) transparent;
+}
+
+/* Home card hover */
+.home-card {
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
 }

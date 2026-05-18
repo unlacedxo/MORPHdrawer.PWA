@@ -1,4 +1,6 @@
 // CREATURE TYPES (weighted random selection)
+import { assignMotif } from './motifs';
+
 export const creatureTypes = [
   "sleepy mushroom creature", "nervous lamp ghost", "tiny moon robot",
   "lonely backpack spirit", "cursed plushie", "soft bone relic",
@@ -6,8 +8,17 @@ export const creatureTypes = [
   "floating eye familiar", "ceramic jar creature", "paper bag ghost"
 ];
 
-// SHAPE LANGUAGE (body forms)
-export const shapes = ["round", "chunky", "floppy", "noodle-shaped", "square", "spiky", "tall", "tiny", "triangle"];
+// SHAPE LANGUAGE
+const shapeAdj = ["chunky", "floppy", "noodle-shaped", "spiky", "tiny", "tall", "crooked", "droopy", "lumpy", "compact", "soft", "angular", "thorny", "stretched"];
+const shapeBase = ["round", "square", "triangle", "blob", "oval", "wedge", "tube", "slab"];
+
+function generateShape(): string {
+  const base = randomItem(shapeBase);
+  const adj1 = randomItem(shapeAdj);
+  // 50% chance of a third modifier
+  const adj2 = Math.random() > 0.5 ? randomItem(shapeAdj.filter(a => a !== adj1)) : null;
+  return adj2 ? `${adj1} + ${adj2} ${base}` : `${adj1} ${base}`;
+}
 
 // FACE OPTIONS
 export const faces = [
@@ -46,10 +57,18 @@ export const personalities = [
 
 // DRAWING TIPS
 export const tips = [
-  "start with a big round circle", "exaggerate the eyes to double their size",
-  "draw the silhouette first, then add inside details",
-  "keep the limbs simple — just tubes", "make one feature dramatically oversized",
-  "add a crack or imperfection to make it feel alive"
+  "start with a big round circle, add the face last",
+  "exaggerate the eyes — make them twice as large as feels right",
+  "draw the full silhouette first, then add inside details",
+  "keep limbs simple — just gentle tubes or sausage shapes",
+  "make one feature dramatically oversized — it's the personality",
+  "add a crack or imperfection — it makes the creature feel alive",
+  "sketch lightly first, then commit to one confident line",
+  "try drawing with your non-dominant hand for character",
+  "overlap shapes slightly for a more organic feel",
+  "add tiny details in corners — tiny arrows, dots, extra eyes",
+  "give it weight — heavier at the bottom makes it feel grounded",
+  "think about where light comes from and add one dark shadow side"
 ];
 
 // EVOLUTION IDEAS
@@ -73,6 +92,7 @@ export type CreatureForm = {
   timestamp: number;
   parentId?: string;
   evolutionLabel?: string;
+  motifId?: string;
 };
 
 const randomItem = <T>(arr: T[]): T => arr[Math.floor(Math.random() * arr.length)];
@@ -85,7 +105,7 @@ export const generateForm = (parentId?: string, evolutionLabel?: string): Creatu
   return {
     id: Math.random().toString(36).substring(2, 9),
     concept: randomItem(creatureTypes),
-    shape: randomItem(shapes),
+    shape: generateShape(),
     face: randomItem(faces),
     details: randomItems(bodyDetails, Math.floor(Math.random() * 3) + 2),
     materials: randomItem(materials),
@@ -95,6 +115,7 @@ export const generateForm = (parentId?: string, evolutionLabel?: string): Creatu
     tip: randomItem(tips),
     timestamp: Date.now(),
     parentId,
-    evolutionLabel
+    evolutionLabel,
+    motifId: assignMotif()
   };
 };

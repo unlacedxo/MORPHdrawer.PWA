@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'wouter';
 import { DustParticles } from './DustParticles';
+import { MarginDoodles } from './MarginDoodles';
 import { Logo } from './Logo';
 import { useNotebookMemory } from '@/lib/notebookMemory';
 import { motion } from 'framer-motion';
@@ -13,10 +14,13 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
   const wearOpacity = Math.min(0.8, wearLevel / 100);
   const darkEdgeOpacity = Math.min(0.5, wearLevel / 150);
 
+  const isHome = location === '/';
+
   return (
     <div className="min-h-[100dvh] w-full relative flex flex-col items-center">
       <div className="paper-texture" />
       <DustParticles />
+      <MarginDoodles />
       
       {/* Edge wear overlay */}
       <div 
@@ -28,15 +32,24 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       />
 
       {/* Navigation */}
-      <header className="w-full max-w-md mx-auto p-4 z-20 flex justify-between items-center relative">
-        <Link href="/" className="flex items-center gap-2 text-foreground hover-shift no-underline group cursor-pointer" aria-label="Sketchbook Home">
-          <Logo size={40} className="text-primary group-hover:text-primary transition-colors" />
-          <span className="font-sans font-bold text-xl tracking-wider text-foreground">MORPHDRAWER</span>
-        </Link>
-        <nav className="flex gap-4 font-sans text-lg">
-          <Link href="/notebook" className={`cursor-pointer hover-shift ${location === '/notebook' ? 'text-primary border-b-2 border-primary' : 'text-muted-foreground hover:text-foreground'}`}>Archive</Link>
-          <Link href="/themes" className={`cursor-pointer hover-shift ${location === '/themes' ? 'text-primary border-b-2 border-primary' : 'text-muted-foreground hover:text-foreground'}`}>Themes</Link>
-        </nav>
+      <header className="w-full max-w-md mx-auto p-4 z-20 flex justify-between items-center relative min-h-[72px]">
+        {isHome ? (
+          <div className="w-full flex justify-center">
+            <div className="flex items-center gap-2 text-foreground group">
+              <Logo size={40} className="text-primary transition-colors" />
+              <span className="font-sans font-bold text-xl tracking-wider text-foreground">MORPHDRAWER</span>
+            </div>
+          </div>
+        ) : (
+          <>
+            <Link href="/" className="font-sans text-muted-foreground hover:text-foreground hover-shift no-underline cursor-pointer flex items-center gap-2">
+              ← Notebook
+            </Link>
+            <div className="flex items-center gap-2">
+              <Logo size={24} className="text-primary opacity-50" />
+            </div>
+          </>
+        )}
       </header>
 
       {/* Main Content Area */}

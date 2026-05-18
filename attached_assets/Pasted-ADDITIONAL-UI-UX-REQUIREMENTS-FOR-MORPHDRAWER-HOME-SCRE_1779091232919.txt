@@ -1,0 +1,227 @@
+ADDITIONAL UI + UX REQUIREMENTS FOR MORPHDRAWER
+
+⸻
+
+HOME SCREEN CARD SYSTEM
+
+The app should open with large tactile sketchbook-style cards the user can choose from.
+
+Do NOT use:
+
+* standard app navigation bars
+* corporate dashboards
+* tiny utility menus
+* generic sidebars
+
+Instead create large atmospheric notebook cards that feel physically placed inside the sketchbook.
+
+Main Home Cards:
+
+1. CREATE
+    Generate a new creature/object/form.
+2. EVOLVE
+    View previous creations and evolve them into new versions.
+3. SKETCHBOOK
+    Browse saved forms like notebook pages.
+4. THEMES
+    Switch between atmospheric sketchbook worlds.
+5. MOTIFS
+    View recurring symbols, shapes, doodles, and visual mutations discovered over time.
+6. SETTINGS
+    Simple immersive settings panel.
+7. RANDOM PAGE
+    Jump to a random old creation.
+8. MEMORY WALL
+    A collage-like page showing recurring visual patterns and evolved forms.
+
+The cards should:
+
+* tilt slightly
+* feel layered
+* have imperfect edges
+* include tiny doodles
+* use paper textures
+* feel physically touchable
+
+Hover/tap effects should feel:
+
+* soft
+* analog
+* tactile
+* paper-like
+
+⸻
+
+SHAPE LANGUAGE IMPROVEMENTS
+
+Do NOT generate only one shape trait.
+
+Instead combine 2–3 shape traits together to create more interesting silhouettes.
+
+Examples:
+
+* chunky + spiky
+* floppy + round
+* triangle + stretched
+* tiny + jagged
+* square + lumpy
+* noodle-shaped + asymmetrical
+* soft + crooked
+* tall + droopy
+* compact + thorny
+* blob-like + angular
+
+The shape system should help beginners visualize silhouettes quickly.
+
+Prioritize:
+
+* readable shapes
+* memorable silhouettes
+* easy sketch construction
+
+⸻
+
+BEGINNER DRAWING ASSISTANCE
+
+Add subtle visual helpers:
+
+* silhouette hints
+* simple shape icons
+* “start with a circle” guidance
+* oversized feature suggestions
+* visual exaggeration tips
+
+The app should gently teach visual thinking without feeling educational or strict.
+
+⸻
+
+SKETCHBOOK PAGE FEEL
+
+Each generated form card should feel like:
+
+* a page fragment
+* taped-in note
+* clipped sketch
+* layered notebook artifact
+
+Add:
+
+* taped corners
+* tiny arrows
+* margin scribbles
+* hand-drawn circles
+* rough labels
+* crossed-out notes
+* uneven ink marks
+* page wrinkles
+* sketch overlays
+
+The interface should feel repeatedly handled by a real artist.
+
+⸻
+
+RECURRING SYMBOL SYSTEM
+
+Create recurring symbolic motifs that subtly reappear across:
+
+* evolved forms
+* cards
+* page corners
+* UI decorations
+* mutation paths
+
+Examples:
+
+* eye symbols
+* stars
+* spirals
+* stitched marks
+* crescent shapes
+* teeth patterns
+* geometric sigils
+* moth symbols
+* moon glyphs
+
+The sketchbook should feel like it develops its own visual language over time.
+
+⸻
+
+FONT CHANGES
+
+REMOVE the current cursive/typewriter-style display font.
+
+Avoid:
+
+* theatrical cursive
+* vintage typewriter overload
+* exaggerated handwritten gimmicks
+
+Replace with fonts that feel:
+
+* artistic
+* atmospheric
+* readable
+* tactile
+* emotionally soft
+* sketchbook-friendly
+
+Preferred font direction:
+
+* expressive serif for titles
+* clean humanist serif or soft sans-serif for body text
+* subtle mono font only for tiny labels
+
+Typography should feel:
+
+* warm
+* elegant
+* imperfect
+* grounded
+
+NOT:
+
+* quirky novelty font
+* spooky carnival font
+* fake handwriting overload
+
+The UI should feel like an art journal, not a haunted circus flyer.
+
+⸻
+
+ESSENTIAL ATMOSPHERIC DETAILS
+
+Add subtle ambient systems:
+
+* drifting dust
+* paper grain
+* watercolor bleed
+* slow texture movement
+* page aging
+* accumulating notebook wear
+* subtle lighting shifts
+* soft edge darkening
+* tiny recurring doodles
+* evolving stains
+
+The atmosphere should evolve slowly over time as the sketchbook fills.
+
+⸻
+
+EMOTIONAL EXPERIENCE
+
+The app should feel:
+
+* safe for imperfect creativity
+* emotionally immersive
+* visually inspiring
+* cozy but strange
+* creatively freeing
+
+The user should feel:
+“I want to keep filling this notebook.”
+
+NOT:
+“I’m using an AI generator.”
+
+MORPHDRAWER should feel like:
+a living sketchbook companion.
