@@ -1,15 +1,25 @@
 name = "morphdrawer-pwa"
-type = "javascript"
-account_id = ""
-workers_dev = true
+main = "dist/index.html"
+compatibility_date = "2024-12-01"
 
 [build]
 command = "pnpm run deploy:morphdrawer"
-cwd = "./"
-watch_paths = ["artifacts/morphdrawer/**/*.ts", "artifacts/morphdrawer/**/*.tsx", "artifacts/morphdrawer/**/*.css"]
+cwd = "./../../"
+watch_paths = ["artifacts/morphdrawer/src/**/*"]
 
 [build.upload]
-format = "service-worker"
+format = "modules"
 
 [env.production]
-route = "morphdrawer.pages.dev"
+route = "example.com/*"
+zone_name = "example.com"
+
+[[rules]]
+type = "CompiledContentType"
+globs = ["**/*.woff", "**/*.woff2", "**/*.ttf", "**/*.otf"]
+fallthrough = true
+
+[[rules]]
+type = "CompiledContentType"
+globs = ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.svg", "**/*.webp"]
+fallthrough = true
