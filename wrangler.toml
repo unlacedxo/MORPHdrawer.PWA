@@ -1,0 +1,15 @@
+name = "morphdrawer-pwa"
+type = "javascript"
+account_id = ""
+workers_dev = true
+
+[build]
+command = "pnpm run deploy:morphdrawer"
+cwd = "./"
+watch_paths = ["artifacts/morphdrawer/**/*.ts", "artifacts/morphdrawer/**/*.tsx", "artifacts/morphdrawer/**/*.css"]
+
+[build.upload]
+format = "service-worker"
+
+[env.production]
+route = "morphdrawer.pages.dev"
