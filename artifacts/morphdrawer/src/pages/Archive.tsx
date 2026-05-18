@@ -10,17 +10,17 @@ export default function Archive() {
       <div className="w-full mb-8 mt-4 flex justify-between items-end border-b-2 border-border/50 pb-4">
         <div>
           <h1 className="font-serif text-4xl text-foreground mb-2">Archive</h1>
-          <p className="font-sans text-lg text-muted-foreground italic">{forms.length} memories saved</p>
+          <p className="font-sans text-base leading-relaxed text-muted-foreground">{forms.length} memories saved</p>
         </div>
         <div className="text-right flex flex-col items-end">
-          <span className="font-sans text-sm text-muted-foreground">Notebook Wear</span>
+          <span className="font-mono text-[11px] tracking-[0.12em] uppercase text-muted-foreground/80">Notebook Wear</span>
           <span className="font-sans font-bold text-xl text-primary">{wearLevel}%</span>
         </div>
       </div>
 
       {forms.length === 0 ? (
         <div className="text-center py-20 opacity-60">
-          <p className="font-sans text-xl italic mb-4">The pages are empty.</p>
+          <p className="font-sans text-xl leading-relaxed mb-4 text-muted-foreground">The pages are empty.</p>
           <p className="font-serif">Go to the sketchbook to find something to draw.</p>
         </div>
       ) : (

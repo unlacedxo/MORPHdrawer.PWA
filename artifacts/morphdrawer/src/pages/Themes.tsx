@@ -36,7 +36,7 @@ export default function Themes() {
     <div className="flex flex-col items-center max-w-md mx-auto w-full pb-20">
       <div className="w-full mb-8 text-center mt-4">
         <h1 className="font-serif text-4xl text-foreground mb-2">Atmospheres</h1>
-        <p className="font-sans text-lg text-muted-foreground italic">Change the notebook's physical world.</p>
+        <p className="font-sans text-base leading-relaxed text-muted-foreground">Change the notebook's physical world.</p>
       </div>
 
       <div className="w-full space-y-6">
@@ -53,7 +53,7 @@ export default function Themes() {
               {theme === t.id && <span className="font-sans text-primary font-bold text-sm bg-primary/10 px-2 py-1 sketch-border rotate-3">Active</span>}
             </div>
             
-            <p className="font-sans text-muted-foreground italic text-md">{t.mood}</p>
+            <p className="font-sans text-muted-foreground  text-md">{t.mood}</p>
             
             <div className="flex gap-2 mt-2">
               {t.colors.map((color, i) => (

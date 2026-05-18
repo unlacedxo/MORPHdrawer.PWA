@@ -9,7 +9,7 @@ export default function Motifs() {
     <div className="flex flex-col items-center max-w-md mx-auto w-full pb-20">
       <div className="w-full mb-8 text-center mt-4">
         <h1 className="font-serif text-3xl text-foreground mb-2">The Notebook's Language</h1>
-        <p className="font-sans text-lg text-muted-foreground italic">Recurring symbols found in your drawings.</p>
+        <p className="font-sans text-base leading-relaxed text-muted-foreground">Recurring symbols found in your drawings.</p>
       </div>
 
       <div className="grid grid-cols-2 gap-4 w-full">
@@ -33,7 +33,7 @@ export default function Motifs() {
                 {discovered ? motif.name : '???'}
               </h3>
               
-              <p className="font-hand text-xs text-muted-foreground mt-2">
+              <p className="font-mono text-[11px] tracking-[0.12em] uppercase text-muted-foreground/80 mt-2">
                 {discovered ? `Seen ${count} times` : 'Undiscovered'}
               </p>
             </div>

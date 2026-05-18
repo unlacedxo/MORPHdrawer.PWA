@@ -55,25 +55,25 @@ export const CreatureCard = ({ form, onSave, isSaved, showActions = true, delay 
         <svg width="24" height="24" viewBox="0 0 24 24" className="text-foreground opacity-10">
           <HintSvg />
         </svg>
-        <div className="font-hand text-sm text-muted-foreground italic">What is it?</div>
+        <div className="font-mono text-[11px] tracking-[0.12em] uppercase text-muted-foreground/80">What is it?</div>
       </div>
       
       <h2 className="text-3xl font-serif font-bold text-foreground mb-4 leading-tight">{form.concept}</h2>
       
       <div className="space-y-3 ink-reveal">
         <div className="flex flex-col">
-          <span className="font-hand text-sm text-muted-foreground italic">Main Shape</span>
+          <span className="font-mono text-[11px] tracking-[0.12em] uppercase text-muted-foreground/80">Main Shape</span>
           <span className="text-lg font-sans">{form.shape}</span>
         </div>
         
         <div className="flex flex-col">
-          <span className="font-hand text-sm text-muted-foreground italic">Face</span>
+          <span className="font-mono text-[11px] tracking-[0.12em] uppercase text-muted-foreground/80">Face</span>
           <span className="text-lg font-sans">{form.face}</span>
         </div>
 
         <div className="sticky-note bg-muted/30 p-3 mt-4 border border-border/50 sketch-border border-dashed">
-          <span className="font-hand text-sm font-bold text-primary mb-1 block">Drawing Tip</span>
-          <span className="text-md italic text-foreground/80 font-sans">{form.tip}</span>
+          <span className="font-mono text-[11px] tracking-[0.14em] uppercase font-bold text-primary mb-1 block">Drawing Tip</span>
+          <span className="text-md  text-foreground/80 font-sans">{form.tip}</span>
         </div>
       </div>
 
@@ -87,23 +87,23 @@ export const CreatureCard = ({ form, onSave, isSaved, showActions = true, delay 
           >
             <div className="pt-4 mt-4 border-t border-dashed border-border/50 space-y-3 font-sans">
               <div className="flex flex-col">
-                <span className="font-hand text-sm text-muted-foreground italic">Details</span>
+                <span className="font-mono text-[11px] tracking-[0.12em] uppercase text-muted-foreground/80">Details</span>
                 <span className="text-lg">{form.details.join(', ')}</span>
               </div>
               <div className="flex flex-col">
-                <span className="font-hand text-sm text-muted-foreground italic">Materials</span>
+                <span className="font-mono text-[11px] tracking-[0.12em] uppercase text-muted-foreground/80">Materials</span>
                 <span className="text-lg">{form.materials}</span>
               </div>
               <div className="flex flex-col">
-                <span className="font-hand text-sm text-muted-foreground italic">Colors</span>
+                <span className="font-mono text-[11px] tracking-[0.12em] uppercase text-muted-foreground/80">Colors</span>
                 <span className="text-lg">{form.colors.join(', ')}</span>
               </div>
               <div className="flex flex-col">
-                <span className="font-hand text-sm text-muted-foreground italic">Personality</span>
+                <span className="font-mono text-[11px] tracking-[0.12em] uppercase text-muted-foreground/80">Personality</span>
                 <span className="text-lg">{form.personality}</span>
               </div>
               <div className="flex flex-col">
-                <span className="font-hand text-sm text-muted-foreground italic">Evolution Idea</span>
+                <span className="font-mono text-[11px] tracking-[0.12em] uppercase text-muted-foreground/80">Evolution Idea</span>
                 <span className="text-lg text-primary font-bold">{form.evolutionIdea}</span>
               </div>
             </div>
@@ -129,7 +129,7 @@ export const CreatureCard = ({ form, onSave, isSaved, showActions = true, delay 
             </button>
           )}
           {isSaved && (
-            <div className="flex-1 text-center py-2 px-4 font-sans text-muted-foreground italic border-2 border-transparent">
+            <div className="flex-1 text-center py-2 px-4 font-sans text-muted-foreground  border-2 border-transparent">
               Saved
             </div>
           )}

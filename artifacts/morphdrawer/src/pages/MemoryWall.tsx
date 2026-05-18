@@ -10,12 +10,12 @@ export default function MemoryWall() {
     <div className="flex flex-col items-center max-w-md mx-auto w-full pb-20">
       <div className="w-full mb-8 text-center mt-4">
         <h1 className="font-serif text-4xl text-foreground mb-2">Memory Wall</h1>
-        <p className="font-sans text-lg text-muted-foreground italic">A collage of past forms.</p>
+        <p className="font-sans text-base leading-relaxed text-muted-foreground">A collage of past forms.</p>
       </div>
 
       {forms.length < 3 ? (
         <div className="text-center py-20 opacity-60">
-          <p className="font-sans text-xl italic mb-4">The wall awaits your first sketches...</p>
+          <p className="font-sans text-xl leading-relaxed mb-4 text-muted-foreground">The wall awaits your first sketches...</p>
         </div>
       ) : (
         <div className="relative w-full flex flex-wrap justify-center gap-4 py-8">
@@ -38,7 +38,7 @@ export default function MemoryWall() {
                   )}
                   
                   <h3 className="font-serif font-bold text-lg text-foreground mt-4 leading-tight mb-2 line-clamp-2">{form.concept}</h3>
-                  <p className="font-hand text-xs text-muted-foreground line-clamp-2">{form.personality}</p>
+                  <p className="font-mono text-[11px] tracking-[0.12em] uppercase text-muted-foreground/80 line-clamp-2">{form.personality}</p>
                 </div>
               </Link>
             );

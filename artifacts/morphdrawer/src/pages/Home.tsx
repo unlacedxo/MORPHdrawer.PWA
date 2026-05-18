@@ -105,7 +105,7 @@ export default function Home() {
               </svg>
               
               <h3 className="font-serif font-bold text-lg text-foreground leading-tight tracking-wide">{card.title}</h3>
-              <p className="font-hand text-xs text-muted-foreground mt-1">{card.desc}</p>
+              <p className="font-mono text-[11px] tracking-[0.12em] uppercase text-muted-foreground/80 mt-1">{card.desc}</p>
             </motion.div>
           );
 
