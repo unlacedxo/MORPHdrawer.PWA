@@ -268,3 +268,19 @@
 .home-card {
   transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
 }
+
+.tip-box {
+  background: hsl(var(--primary) / 0.06);
+  border-left: 2px solid hsl(var(--primary) / 0.35);
+  border-radius: 3px;
+  padding: 10px 12px;
+}
+
+.paper-wrinkle {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, hsl(var(--border) / 0.25) 20%, hsl(var(--border) / 0.15) 80%, transparent 100%);
+  pointer-events: none;
+}

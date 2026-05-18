@@ -1,0 +1,291 @@
+Elevate and refine MORPHDRAWER into a deeply enjoyable beginner drawing experience focused on creativity, confidence, emotional immersion, and playful learning.
+
+Do NOT redesign the app from scratch.
+
+Do NOT add unnecessary complexity.
+
+Instead:
+
+* deepen the atmosphere
+* strengthen the beginner experience
+* enrich the sketchbook immersion
+* improve visual clarity
+* increase emotional attachment
+* make drawing feel approachable and rewarding
+
+The app should feel like:
+a living sketchbook companion that gently teaches users how to enjoy drawing strange lovable things.
+
+⸻
+
+BEGINNER EXPERIENCE IS THE TOP PRIORITY
+
+Every design decision should support:
+
+* lowering drawing anxiety
+* encouraging experimentation
+* making creativity feel playful
+* helping users start drawing immediately
+* rewarding imperfect sketching
+* making users emotionally attached to their creations
+
+The app should NEVER feel:
+
+* intimidating
+* overly technical
+* academically artistic
+* professionally demanding
+* cluttered
+* overwhelming
+
+The experience should feel:
+“wait… I can actually draw this.”
+
+⸻
+
+MAKE OUTPUTS MORE DRAWABLE
+
+Strengthen the creature generation system so forms feel:
+
+* instantly visualizable
+* silhouette-driven
+* memorable
+* simple to sketch
+* emotionally expressive
+
+Prioritize:
+
+* chunky + spiky
+* floppy + round
+* crooked + tiny
+* stretched + soft
+* lumpy + angular
+* blob-like + thorny
+
+Avoid:
+
+* overly abstract wording
+* complicated anatomy
+* long descriptive paragraphs
+* dense lore
+
+Outputs should create immediate mental images.
+
+⸻
+
+ADD SIMPLE VISUAL DRAWING AIDS
+
+Add beginner-friendly visual helpers:
+
+* tiny silhouette previews
+* doodled creature blobs
+* shape icons
+* simple sketch hints
+* rough form guides
+* exaggerated feature suggestions
+
+Examples:
+
+* oversized eyes
+* tiny legs
+* huge sleeves
+* uneven shape
+* crooked smile
+* floating hands
+
+The app should help users THINK visually without feeling like a tutorial.
+
+⸻
+
+MAKE DRAWING TIPS MORE ENCOURAGING
+
+Avoid technical art advice.
+
+Do NOT use:
+
+* anatomy language
+* rendering terminology
+* perspective instruction
+* lighting theory
+
+Instead use:
+
+* “start with a circle”
+* “keep it lumpy”
+* “make the eyes too big”
+* “draw one side uneven”
+* “make the arms tiny”
+* “keep the silhouette simple”
+* “add tiny doodles around it”
+
+The drawing guidance should feel:
+
+* friendly
+* permissive
+* playful
+* confidence-building
+
+⸻
+
+MAKE THE CREATURES FEEL ALIVE
+
+The generated forms should feel emotionally present inside the notebook.
+
+Add:
+
+* recurring doodle versions
+* silhouette stamps
+* tiny margin appearances
+* sketch echoes
+* recurring symbols
+* evolving creature marks
+
+The notebook should subtly “remember” creatures over time.
+
+Users should feel emotionally attached to:
+their weird little creations.
+
+⸻
+
+DEEPEN THE NOTEBOOK IMMERSION
+
+Increase the feeling that the sketchbook has been repeatedly used over time.
+
+Add subtle:
+
+* pencil circles
+* taped corners
+* erased marks
+* crossed-out notes
+* graphite smudges
+* page wrinkles
+* accidental ink dots
+* soft stains
+* paper buckling
+* rough arrows
+* recurring doodles
+
+Keep everything subtle and atmospheric.
+
+The notebook should feel:
+handled, worn, loved, and creatively alive.
+
+⸻
+
+ENHANCE THE CARD EXPERIENCE
+
+Cards should feel:
+
+* tactile
+* layered
+* touchable
+* physically placed into the notebook
+
+Add:
+
+* layered page shadows
+* stacked paper effects
+* subtle tilt randomness
+* folded corners
+* imperfect borders
+* taped fragments
+* textured surfaces
+
+Hover and interaction effects should feel:
+
+* soft
+* analog
+* paper-like
+* emotionally warm
+
+⸻
+
+IMPROVE EMOTIONAL PACING
+
+The app should feel calming and creatively safe.
+
+Avoid:
+
+* visual overload
+* too many simultaneous choices
+* noisy interfaces
+* rapid animations
+
+Create:
+
+* breathing room
+* visual hierarchy
+* gentle transitions
+* quiet atmospheric movement
+
+The app should emotionally feel:
+cozy, strange, safe, inspiring, and creatively freeing.
+
+⸻
+
+MAKE EVOLUTION MORE REWARDING
+
+Evolution should feel:
+
+* magical
+* visual
+* collectible
+* emotionally meaningful
+
+Each evolved form should:
+
+* preserve recognizable traits
+* visibly mutate silhouettes
+* shift textures
+* alter emotional tone
+* introduce recurring motifs
+
+Users should recognize:
+“That’s still my creature.”
+
+⸻
+
+ADD SOFT ATMOSPHERIC MOTION
+
+Deepen immersion with subtle ambient systems:
+
+* drifting dust
+* breathing grain
+* slow shimmer
+* watercolor movement
+* soft page lighting
+* atmospheric particles
+* faint texture shifting
+
+Keep all motion:
+
+* slow
+* subtle
+* dreamlike
+* almost subconscious
+
+Avoid flashy effects.
+
+⸻
+
+PROTECT THE CORE IDENTITY
+
+Do NOT turn MORPHDRAWER into:
+
+* a generic AI art generator
+* a hyper-realistic concept art tool
+* a corporate creative platform
+* a productivity app
+* a complex art education system
+
+Its strength is:
+
+* emotional atmosphere
+* tactile sketchbook energy
+* beginner friendliness
+* drawable forms
+* weird lovable creatures
+* playful visual storytelling
+
+MORPHDRAWER should feel like:
+a living notebook full of strange emotional doodles users slowly fall in love with while learning to enjoy drawing.

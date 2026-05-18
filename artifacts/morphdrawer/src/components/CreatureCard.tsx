@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { CreatureForm } from '@/lib/generator';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'wouter';
+import { CreatureDoodle } from '@/components/CreatureDoodle';
 
 interface CreatureCardProps {
   form: CreatureForm;
@@ -33,8 +34,14 @@ export const CreatureCard = ({ form, onSave, isSaved, showActions = true, delay 
       transition={{ duration: 0.6, delay, ease: [0.22, 1, 0.36, 1] }}
       className="w-full bg-card/80 backdrop-blur-sm p-6 mb-6 sketch-border relative group hover-shift"
     >
+      <div className="absolute top-3 right-8 pointer-events-none">
+        <CreatureDoodle form={form} size={88} opacity={0.16} className="text-foreground" />
+      </div>
+
+      <div className="absolute left-5 top-6 bottom-6 w-px bg-border/20 pointer-events-none" />
+
       {/* Tape strips */}
-      <div className="tape-strip -top-2 left-8 w-12 h-5 opacity-60 rotate-[-8deg]" />
+      <div className="tape-strip -top-2 left-8 w-12 h-5 opacity-60 rotate-[-8deg]" style={{ backgroundImage: 'repeating-linear-gradient(90deg, transparent, transparent 4px, rgba(0,0,0,0.05) 4px, rgba(0,0,0,0.05) 5px)' }} />
       <div className="tape-strip -bottom-2 right-6 w-10 h-4 opacity-50 rotate-[5deg]" style={{ background: 'hsl(var(--secondary) / 0.25)' }} />
 
       {/* Margin doodles */}
@@ -45,7 +52,7 @@ export const CreatureCard = ({ form, onSave, isSaved, showActions = true, delay 
       </div>
 
       {form.evolutionLabel && (
-        <div className="absolute -top-3 -right-2 bg-primary text-primary-foreground font-sans px-3 py-1 text-sm font-bold sketch-border rotate-3 shadow-sm">
+        <div className="absolute -top-3 -right-2 bg-primary/15 text-primary border border-primary/30 font-mono text-[10px] tracking-[0.12em] uppercase px-2 py-1 sketch-border rotate-2 shadow-sm">
           {form.evolutionLabel}
         </div>
       )}
@@ -60,6 +67,8 @@ export const CreatureCard = ({ form, onSave, isSaved, showActions = true, delay 
       
       <h2 className="text-3xl font-serif font-bold text-foreground mb-4 leading-tight">{form.concept}</h2>
       
+      <div className="w-full h-px bg-border/15 my-1" />
+
       <div className="space-y-3 ink-reveal">
         <div className="flex flex-col">
           <span className="font-mono text-[11px] tracking-[0.12em] uppercase text-muted-foreground/80">Main Shape</span>
@@ -71,9 +80,9 @@ export const CreatureCard = ({ form, onSave, isSaved, showActions = true, delay 
           <span className="text-lg font-sans">{form.face}</span>
         </div>
 
-        <div className="sticky-note bg-muted/30 p-3 mt-4 border border-border/50 sketch-border border-dashed">
-          <span className="font-mono text-[11px] tracking-[0.14em] uppercase font-bold text-primary mb-1 block">Drawing Tip</span>
-          <span className="text-md  text-foreground/80 font-sans">{form.tip}</span>
+        <div className="bg-primary/[0.07] border-l-2 border-primary/40 rounded-sm p-3 mt-4">
+          <span className="font-mono text-[11px] tracking-[0.14em] uppercase font-semibold text-primary mb-1 block">Drawing Tip</span>
+          <span className="text-base text-foreground/80 font-sans leading-snug">{form.tip}</span>
         </div>
       </div>
 
@@ -113,9 +122,12 @@ export const CreatureCard = ({ form, onSave, isSaved, showActions = true, delay 
 
       <button 
         onClick={() => setExpanded(!expanded)}
-        className="w-full text-center py-2 mt-4 font-hand text-muted-foreground hover:text-foreground transition-colors border-b border-transparent hover:border-border border-dashed cursor-pointer text-lg"
+        className="w-full text-center py-3 mt-4 font-mono text-[11px] tracking-[0.14em] uppercase text-muted-foreground hover:text-foreground transition-colors cursor-pointer flex items-center justify-center gap-2"
       >
         {expanded ? "Fold away..." : "See more..."}
+        <svg width="10" height="10" viewBox="0 0 10 10" style={{ transform: expanded ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}>
+          <path d="M2 3 L5 7 L8 3" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+        </svg>
       </button>
 
       {showActions && (

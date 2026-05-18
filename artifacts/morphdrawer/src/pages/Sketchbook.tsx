@@ -23,9 +23,9 @@ export default function Sketchbook() {
 
   return (
     <div className="flex flex-col items-center max-w-md mx-auto w-full pb-20">
-      <div className="w-full mb-8 text-center mt-4">
-        <h1 className="font-serif text-4xl text-foreground mb-2">Blank Page</h1>
-        <p className="font-sans text-base leading-relaxed text-muted-foreground">Draw what you see in your mind.</p>
+      <div className="w-full mb-6 text-center mt-4">
+        <h1 className="font-serif text-3xl text-foreground mb-1 leading-tight">Something is waiting to be drawn.</h1>
+        <p className="font-mono text-[11px] tracking-[0.14em] uppercase text-muted-foreground/70 mt-2">turn the page to find it</p>
       </div>
 
       <div className="w-full min-h-[400px]">
@@ -44,12 +44,13 @@ export default function Sketchbook() {
       </div>
 
       <motion.button
-        whileHover={{ scale: 1.02, rotate: -1 }}
-        whileTap={{ scale: 0.98, rotate: 1 }}
+        whileHover={{ scale: 1.02, rotate: -0.5 }}
+        whileTap={{ scale: 0.97 }}
         onClick={handleGenerate}
-        className="mt-8 bg-foreground text-background font-sans text-xl py-4 px-8 sketch-border-heavy font-bold shadow-md cursor-pointer hover:bg-foreground/90 transition-colors w-full"
+        data-testid="button-generate"
+        className="mt-6 bg-primary/90 text-primary-foreground font-sans text-lg py-4 px-8 sketch-border font-semibold shadow-sm cursor-pointer hover:bg-primary transition-colors w-full tracking-wide"
       >
-        Turn the Page
+        Open a New Page
       </motion.button>
     </div>
   );

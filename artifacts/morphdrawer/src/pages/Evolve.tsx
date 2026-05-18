@@ -9,6 +9,21 @@ const EVOLUTION_LABELS = [
   "Dream Version", "Chaotic Version", "Softer Version"
 ];
 
+function makeEvolutionConcept(parentConcept: string, label: string): string {
+  const map: Record<string, string> = {
+    "Eerie Version": "eerie",
+    "Sleepy Version": "sleeping",
+    "Relic Version": "ancient relic",
+    "Dream Version": "dream-form",
+    "Chaotic Version": "chaotic",
+    "Softer Version": "softer",
+  };
+  const adjective = map[label] || "evolved";
+  const words = parentConcept.split(' ');
+  const core = words.slice(-2).join(' ');
+  return adjective + ' ' + core;
+}
+
 export default function Evolve() {
   const [, params] = useRoute('/evolve/:id');
   const parentId = params?.id;
@@ -33,7 +48,10 @@ export default function Evolve() {
     if (parentForm && evolutions.length === 0) {
       // Generate 4 variants
       const labels = [...EVOLUTION_LABELS].sort(() => 0.5 - Math.random()).slice(0, 4);
-      const newEvolutions = labels.map(label => generateForm(parentForm.id, label));
+      const newEvolutions = labels.map(label => {
+        const evo = generateForm(parentForm.id, label);
+        return { ...evo, concept: makeEvolutionConcept(parentForm.concept, label) };
+      });
       setEvolutions(newEvolutions);
     }
   }, [parentForm, evolutions.length]);
@@ -44,7 +62,12 @@ export default function Evolve() {
     <div className="flex flex-col items-center max-w-md mx-auto w-full pb-20">
       <div className="w-full mb-8 text-center mt-4">
         <h1 className="font-serif text-3xl text-foreground mb-2">Evolution Chamber</h1>
-        <p className="font-sans text-base leading-relaxed text-muted-foreground">Watch it change and grow.</p>
+        {parentForm && (
+          <p className="font-mono text-[11px] tracking-[0.14em] uppercase text-muted-foreground/70 mt-1">
+            evolving from: {parentForm.concept}
+          </p>
+        )}
+        <p className="font-sans text-base leading-relaxed text-muted-foreground mt-2">Watch it change and grow.</p>
       </div>
 
       <div className="w-full mb-8">
