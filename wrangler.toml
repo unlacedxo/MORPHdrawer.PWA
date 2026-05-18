@@ -1,6 +1,3 @@
 name = "morphdrawer-pwa"
 compatibility_date = "2026-05-18"
 pages_build_output_dir = "artifacts/morphdrawer/dist"
-
-[build]
-command = "pnpm --filter @workspace/morphdrawer build"
