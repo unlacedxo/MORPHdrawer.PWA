@@ -1,0 +1,192 @@
+Refine MORPHDRAWER into a creative drawing companion specifically designed to help users learn drawing fundamentals through playful creature design and sketchbook experimentation.
+
+The primary purpose of the app is:
+- helping users practice drawing
+- improving visual thinking
+- building silhouette understanding
+- encouraging experimentation
+- making drawing feel fun and emotionally rewarding
+
+Users will take the generated ideas into Procreate and sketch them manually.
+
+The app should support:
+- creativity
+- confidence
+- exploration
+- visual imagination
+- shape language learning
+
+NOT:
+- realism
+- hyper-detail
+- complicated lore
+- professional concept art workflows
+- intimidating art instruction
+
+--------------------------------------------------
+CORE DRAWING PHILOSOPHY
+--------------------------------------------------
+
+The app should teach drawing indirectly through play.
+
+Users should naturally improve at:
+- silhouettes
+- proportions
+- exaggeration
+- visual balance
+- shape combinations
+- readable designs
+- emotional expression
+- feature hierarchy
+
+without feeling like they are “studying.”
+
+The experience should feel:
+creative, cozy, weird, playful, and freeing.
+
+--------------------------------------------------
+MAKE SHAPES THE MAIN FOCUS
+--------------------------------------------------
+
+Every generated creature should prioritize:
+- silhouette readability
+- strong shape language
+- memorable forms
+- easy sketch construction
+
+Use combined shape traits:
+- chunky + spiky
+- floppy + stretched
+- tiny + jagged
+- lumpy + round
+- crooked + soft
+- angular + blob-like
+
+The silhouette should be understandable in seconds.
+
+--------------------------------------------------
+ADD VISUAL DRAWING AIDS
+--------------------------------------------------
+
+Every generated form should include:
+- a tiny silhouette icon
+- rough doodled shape preview
+- simplified blob version
+- visual shape hints
+
+NOT polished art.
+
+The goal is:
+helping users mentally “see” the drawing immediately.
+
+--------------------------------------------------
+MAKE DRAWING TIPS PRACTICAL
+--------------------------------------------------
+
+Avoid advanced art advice.
+
+Do NOT teach:
+- rendering
+- anatomy
+- perspective theory
+- lighting systems
+
+Instead focus on:
+- shape construction
+- exaggeration
+- simplification
+- visual rhythm
+- silhouette flow
+
+Good examples:
+- start with one big circle
+- make the eyes oversized
+- keep the limbs tiny
+- draw the silhouette first
+- keep one side uneven
+- make the shape wobble slightly
+- add dangling details last
+
+The app should constantly reduce fear and perfectionism.
+
+--------------------------------------------------
+ENCOURAGE ITERATION
+--------------------------------------------------
+
+The app should encourage users to:
+- redraw creatures multiple times
+- evolve old sketches
+- experiment with proportions
+- remix silhouettes
+- push shapes further
+- exaggerate features
+
+The notebook should feel like:
+a playground for visual experimentation.
+
+--------------------------------------------------
+MAKE EVOLUTION A DRAWING EXERCISE
+--------------------------------------------------
+
+Evolution should teach visual iteration.
+
+Each evolution should:
+- alter silhouettes
+- exaggerate features
+- shift proportions
+- mutate shapes
+- introduce asymmetry
+- increase visual personality
+
+Examples:
+- eyes multiply
+- sleeves become wings
+- body stretches taller
+- shape softens
+- limbs shrink
+- silhouette becomes sharper
+
+Users should feel like:
+they are practicing visual design naturally.
+
+--------------------------------------------------
+DEEPEN THE SKETCHBOOK FEEL
+--------------------------------------------------
+
+The notebook atmosphere should support creativity and inspiration.
+
+Add subtle:
+- taped corners
+- sketch marks
+- graphite smudges
+- notebook arrows
+- page wear
+- tiny doodles
+- silhouette stamps
+- erased construction marks
+- recurring creature motifs
+
+The app should feel:
+used, loved, messy, artistic, and emotionally alive.
+
+--------------------------------------------------
+PROTECT THE CORE IDENTITY
+--------------------------------------------------
+
+Do NOT turn MORPHDRAWER into:
+- a realistic AI art generator
+- a chatbot
+- a productivity app
+- a complex art education platform
+- a professional concept art suite
+
+The strength of MORPHDRAWER is:
+- playful drawing inspiration
+- beginner accessibility
+- shape experimentation
+- emotional sketchbook immersion
+- weird lovable forms
+- visual creativity practice
+
+The app should feel like:
+a living sketchbook companion that helps users fall in love with drawing weird little creatures in Procreate.

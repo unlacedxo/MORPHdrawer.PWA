@@ -61,22 +61,23 @@ export default function Evolve() {
   return (
     <div className="flex flex-col items-center max-w-md mx-auto w-full pb-20">
       <div className="w-full mb-8 text-center mt-4">
-        <h1 className="font-serif text-3xl text-foreground mb-2">Evolution Chamber</h1>
+        <h1 className="font-serif text-3xl text-foreground mb-2">Mutate the Form</h1>
         {parentForm && (
           <p className="font-mono text-[11px] tracking-[0.14em] uppercase text-muted-foreground/70 mt-1">
             evolving from: {parentForm.concept}
           </p>
         )}
-        <p className="font-sans text-base leading-relaxed text-muted-foreground mt-2">Watch it change and grow.</p>
+        <p className="font-sans text-base leading-relaxed text-muted-foreground mt-2">Push the silhouette. Try them all in your sketchbook.</p>
       </div>
 
       <div className="w-full mb-8">
-        <h3 className="font-sans font-bold text-sm text-muted-foreground mb-4 uppercase tracking-widest text-center border-b border-border/30 pb-2">Parent Form</h3>
+        <h3 className="font-mono text-[11px] tracking-[0.14em] uppercase text-muted-foreground/70 mb-4 text-center border-b border-border/30 pb-2">Starting Form</h3>
         <CreatureCard form={parentForm} showActions={false} />
       </div>
 
       <div className="w-full mb-4">
-        <h3 className="font-sans font-bold text-sm text-muted-foreground mb-4 uppercase tracking-widest text-center border-b border-border/30 pb-2">Mutations</h3>
+        <h3 className="font-mono text-[11px] tracking-[0.14em] uppercase text-muted-foreground/70 mb-2 text-center border-b border-border/30 pb-2">Drawing Exercises</h3>
+        <p className="font-sans text-sm text-muted-foreground/70 text-center mb-6 leading-relaxed">Each version pushes the silhouette somewhere new. Sketch them all — even rough.</p>
         <div className="space-y-6">
           {evolutions.map((evo, idx) => {
             const isSaved = forms.some(f => f.id === evo.id);

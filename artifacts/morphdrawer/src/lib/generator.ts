@@ -125,6 +125,7 @@ export type CreatureForm = {
   personality: string;
   evolutionIdea: string;
   tip: string;
+  constructionSteps: string[];
   timestamp: number;
   parentId?: string;
   evolutionLabel?: string;
@@ -137,18 +138,82 @@ const randomItems = <T>(arr: T[], count: number): T[] => {
   return shuffled.slice(0, count);
 };
 
+function generateConstructionSteps(shape: string, face: string, details: string[]): string[] {
+  const bodyStep =
+    shape.includes('tall') || shape.includes('tube') || shape.includes('pillar')
+      ? "draw a tall rounded rectangle — taller than it is wide, slightly uneven"
+      : shape.includes('squat') || shape.includes('square') || shape.includes('slab')
+      ? "draw a wide chunky square — round the corners unevenly"
+      : shape.includes('triangle') || shape.includes('wedge')
+      ? "draw a triangle with rounded corners — wide base, soft point at top"
+      : shape.includes('teardrop') || shape.includes('pear')
+      ? "draw a teardrop — fat and round at the bottom, tapering upward"
+      : shape.includes('tiny')
+      ? "draw one small compact blob — keep it no bigger than a coin"
+      : shape.includes('stretched') || shape.includes('lopsided')
+      ? "draw a lopsided oval — make one side puffier than the other"
+      : shape.includes('spiky') || shape.includes('thorny')
+      ? "draw a round blob, then add 3–5 little triangle spikes along the top"
+      : "draw one big lumpy blob — let it be imperfect";
+
+  const faceStep =
+    face.includes('giant') || face.includes('huge') || face.includes('single huge')
+      ? "add one very large circle in the center of the body — bigger than feels right"
+      : face.includes('stalks')
+      ? "draw two long thin stalks from the top of the body with a circle at each tip"
+      : face.includes('crescent') || face.includes('moon')
+      ? "draw two small crescent shapes — like little moons — in the upper area"
+      : face.includes('X')
+      ? "draw two X shapes for eyes and a tiny dot between them"
+      : face.includes('dots') || face.includes('sleepy') || face.includes('closed')
+      ? "add two small oval dots — keep them close together and slightly droopy"
+      : face.includes('star')
+      ? "draw two small star shapes for eyes — four or five points each"
+      : face.includes('spiral')
+      ? "draw two small spirals — start from the center and curl outward"
+      : "place two small circle eyes in the upper third — make one slightly bigger";
+
+  const detail = details[0] || "";
+  const detailStep =
+    detail.includes('legs') || detail.includes('feet') || detail.includes('circles')
+      ? "add 3–4 small rounded stumps at the bottom — keep them identical and stubby"
+      : detail.includes('arms') || detail.includes('hands') || detail.includes('nub')
+      ? "add two tiny arm stubs on the sides — short, simple, and slightly uneven"
+      : detail.includes('tail') || detail.includes('draggy')
+      ? "draw one curved tail coming from the back — a single gentle S-curve"
+      : detail.includes('sleeves')
+      ? "add two large drooping sleeve shapes on either side of the body"
+      : detail.includes('antenna')
+      ? "draw one or two thin wobbly lines from the top, each ending in a small circle"
+      : detail.includes('wings')
+      ? "add two small flat wing shapes behind the upper body — keep them simple"
+      : detail.includes('halo') || detail.includes('bent')
+      ? "draw a small tilted oval above the head — the halo, slightly off-center"
+      : detail.includes('charms') || detail.includes('dangling')
+      ? "hang 2–3 tiny shapes from the body on thin lines — circles, stars, or teardrops"
+      : detail.includes('patches') || detail.includes('sewn')
+      ? "add 2–3 small irregular rectangles on the body surface — the patches"
+      : "add one small detail that makes it feel like your own — a mark, a patch, a line";
+
+  return [bodyStep, faceStep, detailStep];
+}
+
 export const generateForm = (parentId?: string, evolutionLabel?: string): CreatureForm => {
+  const shape = generateShape();
+  const face = randomItem(faces);
+  const details = randomItems(bodyDetails, Math.floor(Math.random() * 3) + 2);
   return {
     id: Math.random().toString(36).substring(2, 9),
     concept: randomItem(creatureTypes),
-    shape: generateShape(),
-    face: randomItem(faces),
-    details: randomItems(bodyDetails, Math.floor(Math.random() * 3) + 2),
+    shape,
+    face,
+    details,
     materials: randomItem(materials),
     colors: randomItem(colorPalettes),
     personality: randomItem(personalities),
     evolutionIdea: randomItem(evolutionIdeas),
     tip: randomItem(tips),
+    constructionSteps: generateConstructionSteps(shape, face, details),
     timestamp: Date.now(),
     parentId,
     evolutionLabel,
