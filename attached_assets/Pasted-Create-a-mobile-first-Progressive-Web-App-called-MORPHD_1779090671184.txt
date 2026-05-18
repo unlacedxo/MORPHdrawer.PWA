@@ -1,0 +1,559 @@
+Create a mobile-first Progressive Web App called MORPHDRAWER.
+
+MORPHDRAWER is an atmospheric sketchbook experience for beginner artists. It should feel like a living notebook filled with evolving creatures, haunted doodles, emotional relics, soft monsters, strange objects, and sketch companions.
+
+The app should feel:
+
+* hand-crafted
+* tactile
+* emotionally alive
+* cozy
+* weird
+* imperfect
+* playful
+* atmospheric
+* beginner-friendly
+
+Avoid:
+
+* corporate UI
+* sterile minimalism
+* startup aesthetics
+* glassmorphism
+* overly technical interfaces
+* hyper-complex AI systems
+* intimidating professional art tools
+
+The emotional goal:
+“A haunted little sketchbook that gently teaches beginners how to draw weird lovable things.”
+
+⸻
+
+CORE PURPOSE
+
+Users generate simple drawable forms:
+
+* creatures
+* mascots
+* haunted objects
+* relics
+* tiny gods
+* soft monsters
+* cursed plushies
+* abstract companions
+* emotional doodles
+
+The app should help users:
+
+1. generate a form
+2. instantly understand how to draw it
+3. evolve it into new versions
+4. emotionally connect with the notebook
+
+The experience should encourage:
+
+* messy creativity
+* experimentation
+* imperfect sketching
+* playful drawing
+* emotional expression
+
+⸻
+
+IMPORTANT TECH DIRECTION
+
+Do NOT rely on OpenAI APIs, large AI infrastructures, expensive cloud generation systems, or enterprise AI architecture.
+
+Do NOT build the app around chatbot systems.
+
+Instead, use:
+
+* handcrafted procedural generation
+* weighted randomness
+* curated trait pools
+* modular combinations
+* emotional vocabulary systems
+* symbolic motif systems
+* local generation logic
+* evolution tables
+* shape-language systems
+
+The app should feel:
+
+* lightweight
+* immediate
+* fast
+* responsive
+* stylized
+* artistic
+* maintainable
+
+The soul of the app comes from:
+
+* emotional atmosphere
+* tactile presentation
+* notebook immersion
+* procedural creativity
+* visual storytelling
+* evolving sketchbook memory
+
+NOT giant AI models.
+
+⸻
+
+VISUAL STYLE
+
+The interface should feel like:
+
+* an old sketchbook
+* a repeatedly used notebook
+* a paper archive
+* a personal doodle journal
+* a living artifact
+
+Add:
+
+* hand-drawn arrows
+* rough underlines
+* notebook margins
+* graphite smudges
+* watercolor stains
+* paper wear
+* accidental ink marks
+* drifting dust particles
+* layered paper textures
+* rough sketch borders
+* recurring doodles
+* evolving visual imperfections
+
+The notebook should feel physically used over time.
+
+Avoid:
+
+* perfectly clean cards
+* flat sterile panels
+* modern dashboard layouts
+* polished tech aesthetics
+
+⸻
+
+THEME SYSTEM
+
+Create four atmospheric sketchbook themes:
+
+1. Moth Dust
+2. Bone Archive
+3. Lunar Static
+4. Cathedral Dust
+
+These are emotional worlds, not dark/light themes.
+
+Each theme should dynamically affect:
+
+* textures
+* paper grain
+* overlays
+* colors
+* card surfaces
+* typography tone
+* stains
+* particles
+* edge wear
+* symbols
+* lighting feel
+* atmospheric motion
+
+⸻
+
+THEME DETAILS
+
+MOTH DUST:
+Colors:
+
+* dusty brown
+* ash cream
+* muted cyan
+* amber
+* soot gray
+
+Mood:
+An attic sketchbook slowly aging over time.
+
+Add:
+
+* moth wing textures
+* drifting dust
+* brittle paper feel
+* faded graphite
+* soft decay
+
+⸻
+
+BONE ARCHIVE:
+Colors:
+
+* bone ivory
+* dried rust
+* walnut
+* faded gold
+* surgical gray
+
+Mood:
+An anatomical notebook mixed with occult taxonomy.
+
+Add:
+
+* parchment textures
+* specimen markings
+* faded diagrams
+* old archive energy
+* scientific sketch feeling
+
+⸻
+
+LUNAR STATIC:
+Colors:
+
+* indigo
+* silver-gray
+* faded violet
+* pale cyan
+* midnight charcoal
+
+Mood:
+A dreamlike cosmic notebook.
+
+Add:
+
+* subtle stars
+* static noise
+* moonlit glow
+* melancholy atmosphere
+* soft shimmer
+* dreamy haze
+
+⸻
+
+CATHEDRAL DUST:
+Colors:
+
+* incense black
+* stained-glass crimson
+* candle gold
+* parchment tan
+* shadow blue
+
+Mood:
+A forgotten gothic manuscript.
+
+Add:
+
+* cathedral dust
+* sacred symbols
+* illuminated manuscript feeling
+* candlelit paper warmth
+* stained-glass lighting
+
+⸻
+
+TYPOGRAPHY
+
+Use:
+
+* expressive serif fonts
+* handwritten accents
+* rough imperfect spacing
+* textured typography
+
+Typography should feel:
+
+* human
+* emotional
+* slightly worn
+* artistic
+
+Avoid:
+
+* futuristic fonts
+* sleek UI typography
+* startup branding fonts
+
+⸻
+
+CORE GENERATION SYSTEM
+
+Generation should focus on:
+
+* simple drawable silhouettes
+* emotional personality
+* memorable features
+* shape language
+* beginner-friendly drawing
+
+Avoid:
+
+* realism
+* anatomy complexity
+* giant lore dumps
+* professional concept art density
+
+⸻
+
+OUTPUT FORMAT
+
+Every generated form should contain:
+
+1. What Is It?
+    Short concept.
+    Examples:
+
+* sleepy mushroom creature
+* nervous lamp ghost
+* tiny moon robot
+* lonely backpack spirit
+
+⸻
+
+2. Main Shape
+    Simple shape language:
+
+* round
+* square
+* chunky
+* floppy
+* triangle
+* noodle-shaped
+* spiky
+* tall
+* tiny
+
+⸻
+
+3. Face
+    Simple facial concepts:
+
+* button eyes
+* sleepy dots
+* stitched mouth
+* tiny fang
+* crooked smile
+* star nose
+
+⸻
+
+4. Body Details
+    Only 2–4 memorable features:
+
+* floating hands
+* oversized sleeves
+* leaf tail
+* dangling charms
+* cracked shell
+* tiny legs
+
+⸻
+
+5. Texture + Materials
+    Easy visual surfaces:
+
+* plush
+* paper
+* cracked paint
+* graphite
+* ceramic
+* fuzzy
+* jelly-like
+* shiny plastic
+
+⸻
+
+6. Colors
+    3–5 emotionally named colors:
+
+* attic blue
+* bruised lavender
+* dusty mint
+* candle yellow
+* raincloud gray
+
+⸻
+
+7. Personality
+    Short emotional presence:
+
+* shy but curious
+* sleepy guardian
+* dramatic little menace
+* lonely but friendly
+* chaotic sweetheart
+
+⸻
+
+8. Evolution Idea
+    Simple mutation:
+
+* grows extra eyes
+* sleeves become wings
+* face cracks slightly
+* symbols spread
+* colors darken
+* body stretches taller
+
+⸻
+
+9. Drawing Tip
+    Beginner-friendly advice:
+
+* start with circles
+* exaggerate the eyes
+* draw silhouette first
+* keep limbs simple
+* make one feature oversized
+
+⸻
+
+QUICK SKETCH MODE
+
+The app should prioritize beginner confidence.
+
+Default view should only show:
+
+* What Is It
+* Main Shape
+* Face
+* Drawing Tip
+
+Everything else expands optionally.
+
+The experience should feel:
+“I can draw this right now.”
+
+NOT:
+“This is too complicated.”
+
+⸻
+
+EVOLUTION SYSTEM
+
+Users can evolve forms.
+
+After clicking “Evolve This Form”:
+show branching evolution cards.
+
+Evolution should feel:
+
+* visual
+* playful
+* emotionally transformative
+
+Examples:
+
+* eerie version
+* sleepy version
+* relic version
+* dream version
+* chaotic version
+* softer version
+
+Avoid giant lore essays.
+
+Keep evolutions:
+
+* simple
+* visual
+* drawable
+
+⸻
+
+NOTEBOOK MEMORY SYSTEM
+
+As users evolve creatures:
+
+* stains accumulate
+* recurring symbols appear
+* textures shift
+* paper becomes more worn
+* atmospheric details increase
+* visual memory builds up
+
+The notebook itself should evolve visually.
+
+The sketchbook should feel alive.
+
+⸻
+
+INTERACTIONS
+
+Interactions should feel:
+
+* soft
+* analog
+* textured
+* gentle
+* atmospheric
+
+Add:
+
+* subtle hover movement
+* paper-like transitions
+* drifting particles
+* soft ink reveals
+* imperfect motion
+* textured animations
+
+Avoid:
+
+* flashy animations
+* hyper-modern transitions
+* aggressive effects
+
+⸻
+
+LOGO DIRECTION
+
+Create a hand-drawn symbolic logo for MORPHDRAWER.
+
+Do NOT create:
+
+* corporate branding
+* clean vector startup logos
+* polished AI symbols
+
+The logo should feel:
+
+* doodled in notebook margins
+* emotionally symbolic
+* imperfect
+* textured
+* strange but lovable
+
+Possible directions:
+
+* tiny ink familiar
+* evolving blob creature
+* folded notebook eye
+* sketchbook sigil
+* recurring mascot symbol
+
+The logo should feel like:
+“a creature the notebook itself drew.”
+
+⸻
+
+IMPORTANT FINAL GOAL
+
+MORPHDRAWER should feel like:
+
+* a living sketchbook
+* a weird emotional companion
+* an evolving doodle archive
+* a safe place to draw imperfectly
+
+The user should want to:
+
+* keep filling pages forever
+* evolve creatures repeatedly
+* revisit old forms
+* emotionally attach to the notebook
+
+The app should feel memorable, tactile, atmospheric, emotional, and beginner-friendly above all else.
