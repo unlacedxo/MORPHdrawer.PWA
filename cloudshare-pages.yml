@@ -1,0 +1,5 @@
+# Cloudshare Pages deployment helper
+# Adjust this file if Cloudshare Pages expects a different config format.
+build:
+  command: pnpm run deploy:morphdrawer
+  publish: artifacts/morphdrawer/dist
